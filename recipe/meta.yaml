@@ -29,6 +29,7 @@ requirements:
     - python
     - tempora
     - six
+    - setuptools
 
 test:
   imports:
