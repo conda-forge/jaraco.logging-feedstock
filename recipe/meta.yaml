@@ -1,9 +1,8 @@
 {% set name = "jaraco.logging" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "e4eac879927ecb2065c0631d2c8bb36c16138c5085c57db055bdfee2fdb709a8" %}
-{% set build = 0 %}
+{% set hash = "23b10eb0d65afe042fad16eabdf5956bdc863e110c5cf3fa1b4bc59f3a7f37a5" %}
 
 package:
   name: {{ name|lower }}
@@ -15,14 +14,14 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
   noarch: python
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - setuptools_scm >=1.15.0
 
   run:
