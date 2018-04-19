@@ -14,12 +14,15 @@ Summary: jaraco.logging
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/jaraco.logging-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jaraco.logging-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/jaraco.logging-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/jaraco.logging-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jaraco.logging/badges/version.svg)](https://anaconda.org/conda-forge/jaraco.logging)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jaraco.logging/badges/downloads.svg)](https://anaconda.org/conda-forge/jaraco.logging)
+[![Conda Recipe](https://img.shields.io/badge/recipe-jaraco.logging-green.svg)](https://anaconda.org/conda-forge/jaraco.logging)
+[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jaraco.logging.svg)](https://anaconda.org/conda-forge/jaraco.logging)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/jaraco.logging.svg)](https://anaconda.org/conda-forge/jaraco.logging)
+[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jaraco.logging.svg)](https://anaconda.org/conda-forge/jaraco.logging)
 
 Installing jaraco.logging
 =========================
