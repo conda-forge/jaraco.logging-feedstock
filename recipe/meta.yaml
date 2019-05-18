@@ -1,8 +1,8 @@
 {% set name = "jaraco.logging" %}
-{% set version = "1.5.2" %}
+{% set version = "2.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "23b10eb0d65afe042fad16eabdf5956bdc863e110c5cf3fa1b4bc59f3a7f37a5" %}
+{% set hash = "8f7dbf01b75e4d9bac479312b66a94c80d0a6d28db453f397e30687ca42168d1" %}
 
 package:
   name: {{ name|lower }}
