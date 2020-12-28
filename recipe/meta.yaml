@@ -1,8 +1,7 @@
 {% set name = "jaraco.logging" %}
-{% set version = "2.0" %}
+{% set version = "3.1.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "8f7dbf01b75e4d9bac479312b66a94c80d0a6d28db453f397e30687ca42168d1" %}
+{% set hash = "150dc8701207b28bc65a16f0e91c07250a8d1b9da324ce674c0e375774944f13" %}
 
 package:
   name: {{ name|lower }}
@@ -11,15 +10,15 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - setuptools_scm >=1.15.0
@@ -38,8 +37,9 @@ about:
   home: https://github.com/jaraco/jaraco.logging
   # license_file: jaraco doesn't include license files - see https://github.com/jaraco/skeleton/issues/1
   license: MIT
+  license_file: LICENSE
   license_family: MIT
-  summary: 'jaraco.logging'
+  summary: jaraco.logging
   dev_url: https://github.com/jaraco/jaraco.logging
 
 extra:
