@@ -1,5 +1,5 @@
 {% set name = "jaraco.logging" %}
-{% set version = "3.1.0" %}
+{% set version = "3.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 150dc8701207b28bc65a16f0e91c07250a8d1b9da324ce674c0e375774944f13
+  sha256: 93a70b8b3767779ad6c7b56ee98579ced77b69f16abbcae749f62c2c59e67931
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ test:
     - jaraco
   commands:
     - pip check
-  requires: 
+  requires:
     - pip
 
 about:
@@ -39,7 +39,7 @@ about:
   license_file: LICENSE
   license: MIT
   license_family: MIT
-  summary: 'jaraco.logging'
+  summary: jaraco.logging
   dev_url: https://github.com/jaraco/jaraco.logging
 
 extra:
