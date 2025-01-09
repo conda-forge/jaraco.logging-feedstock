@@ -19,7 +19,7 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools_scm >=1.15.0
-
+    - setuptools
   run:
     - python >={{ python_min }}
     - tempora
